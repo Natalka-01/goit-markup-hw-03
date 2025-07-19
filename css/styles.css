@@ -171,6 +171,7 @@ p {
     margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
+    width: 496px;
 }
 
 .hero-button{
@@ -297,10 +298,15 @@ p {
     border-right: 1px solid #e7e9fc;
 }
 
+.page-footer .container{
+    padding: 100px 0;
+}
+
 .footer-text{
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
 
 .footer-logo .logo-part {
@@ -310,4 +316,9 @@ p {
 
 .page-footer {
     background-color: var(--navy-blue);
+}
+
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
 }
