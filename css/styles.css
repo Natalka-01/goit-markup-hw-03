@@ -339,3 +339,6 @@ p {
     width: calc((100% - 48px) / 3);
 }
 
+.hero {
+    padding: 188px 0;
+}
