@@ -10,6 +10,11 @@
     --grey: rgba(46, 47, 66, 0.7);
     --white: #fff;
     --dairy: #fcfcfc;
+
+/* Card set */
+    --items: 4;
+    --indent-col: 24px;
+    --indent-row: 48px;
 }
 
 body{
@@ -48,6 +53,7 @@ img{
     max-width: 100;
     height: auto;
 }
+
 
 
 h1,
@@ -187,6 +193,11 @@ p {
     background-color: #404bbf;
 }
 
+.benefits-ul{
+    display: flex;
+    padding: 120px 0;
+    gap: 24px;
+}
 
 .benefits-items{
         font-weight: 500;
@@ -194,6 +205,11 @@ p {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--navy-blue);
+        margin-bottom: 8px;
+}
+
+.benefits-li{
+    width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
 }
 
 .benefits-text{
@@ -206,10 +222,36 @@ p {
     background-color: var(--cloud);
 }
 
+
+
+
+.team .container,
+.portfolio .container{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-ul{
+    display: flex;
+    gap: var(--indent-col)
+}
+
+
+
+.team-item{
+    width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
+}
+
 .team-item,
 .portfolio-item{
     background-color: var(--white);;
 }
+
+
+.team-content{
+    padding: 32px 16px;
+    text-align: center;
+}
+
 
 .team-title,
 .portfolio-title{
@@ -219,7 +261,8 @@ p {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-transform: capitalize;
-        
+    text-align: center;
+    margin-bottom: 72px;
         
 }
 
@@ -230,6 +273,7 @@ p {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
         
 }
 
@@ -237,6 +281,20 @@ p {
 .portfolio-text{
         line-height: 1.5;
         letter-spacing: 0.02em;
+}
+
+.portfolio-ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent-col);
+    row-gap: var(--indent-row);
+}
+
+.portfolio-content{
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 
 .footer-text{
