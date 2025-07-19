@@ -35,7 +35,7 @@ a{
 }
 
 /* Common */
- .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -43,8 +43,8 @@ a{
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
 
@@ -156,8 +156,6 @@ p {
 /* #region Hero */
 .hero{
     background-color: var(--navy-blue);
-}
-.hero .container{
     padding: 188px 0;
 }
 
@@ -182,6 +180,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
+    font-size: 16px;
     display: block;
     margin: 0 auto;
     border-radius: 4px;
@@ -189,6 +188,7 @@ p {
     max-width: 169px;
     min-width: 169px;
     height: 56px;
+    white-space: nowrap;
 }
 
 .hero-button:hover,
@@ -196,7 +196,7 @@ p {
     background-color: #404bbf;
 }
 
-.benefits .container{
+.benefits {
     padding: 120px 0;
 }
 
@@ -298,6 +298,10 @@ p {
     row-gap: var(--indent-row);
 }
 
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
 .portfolio-content{
     padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
@@ -331,14 +335,4 @@ p {
 }
 
 
-.benefits {
-    padding: 120px 0;
-}
 
-.portfolio-item {
-    width: calc((100% - 48px) / 3);
-}
-
-.hero {
-    padding: 188px 0;
-}
